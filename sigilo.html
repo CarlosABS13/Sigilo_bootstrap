@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sigilo</title>
+  <link rel="stylesheet" href="./styles/sigilo.css">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <span class="ir-arriba icon-arrow-up2"><img src="./images/ir_arriba/flecha-hacia-arriba.png" class="flecha"
+      alt=""></span>
+  <!-- header inicio -->
+  <div class="row header gx-0">
+    <div class="col-12 col-lg-6">
+      <nav class="navbar" id="header">
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+            <img src="./images/Logos/logo.png" class="imagen" alt="Sigilo">
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="col-12 col-lg-6 d-flex justify-content-center">
+      <nav class="barra navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link clr" href="#sigilo">Sigilo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link clr" href="#conócenos">
+                  Conócenos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link clr" href="#nuestra creación">Nuestra creación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link clr" href="#personajes">Personajes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle clr" href="#contacto" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Contacto
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a type="button" data-bs-toggle="modal" data-bs-target="#correo" class="dropdown-item clrx" href="#">Correo</a></li>
+                  <li><a type="button" data-bs-toggle="modal" data-bs-target="#WhatsappEmpresarial" class="dropdown-item clrx" href="#">Número</a></li>
+                  <li><a type="button" data-bs-toggle="modal" data-bs-target="#PQRS" class="dropdown-item clrx" href="#">PQRS</a></li>
+                </ul>
+              </li>
+                <button type="button" class="hola" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Inicio de sesión
+                </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="modal fade" id="correo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog borde">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Correo empresarial</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Sigilo324@gmail.com</p>
+        </div>
+        <div class="modal-footer">
+          <div class="botonp">
+            <button type="button" class="btn botonp" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="PQRS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog borde">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">PQRS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="botonp">
+            <button type="button" class="btn botonp" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="botonp">
+            <button type="button" class="btn botonp">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Registro.</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="hola btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="hola btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header final -->
+
+  <!-- seccion1 inicio -->
+  <section id="sigilo" class="seccion1">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="card border border-0 h-100 w-100 card1" style="width: 18rem;">
+          <div class="card-body d-flex flex-column align-items-center justify-content-center">
+            <h5 class="card-title creato  fs-4">SIGILO</h5>
+            <p class="card-text text-left">Sigilo es una marca la cual fue creada por tres jóvenes con el fin de atacar
+              una problemática que afecta
+              a muchas personas en su día a día. (Esta problemática es el exceso de ruido, teniendo como meta la
+              concientización de las personas).</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <video src="./images/teaser/Teaser___666337c01d0d8ef___.mp4" controls loop class="vi w-100 h-100"></video>
+      </div>
+    </div>
+  </section>
+  <section class="seccion11">
+    <div class="row">
+      <div class="col-12 col-lg-6 d-flex justify-content-center">
+        <img src="./images/problematica/candidato.png" class="pr" alt="">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="crr card h-100 w-100" style="width: 18rem;">
+          <div class="card-body d-flex flex-column align-items-center justify-content-center">
+            <h5 class="card-title creato fs-4">Problemática</h5>
+            <p class="card-text text-left">Desde hace un tiempo hemos percibido que una problemática muy común que tiene
+              la sociedad es la
+              alteración de la tranquilidad por exceso de ruido, esto ocasionando conflictos entre la comunidad.
+              Queremos aportar un método de aprendizaje para enseñar de manera más fácil y eficaz a cumplir esta
+              norma.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- seccion1 final -->
+
+  <!-- seccion2 inicio -->
+  <section id="conócenos" class="seccion2">
+    <main class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div id="carouselExampleCaptions" class="carr carousel slide sl" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active boton"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button class="boton" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button class="boton" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card h-100 w-100 card11 c1" style="width: 18rem;">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title">Sobre nosotros</h5>
+                    <p class="card-text text-left">Sigilo fue la idea de los tres miembros fundadores para concientizar
+                      a las
+                      personas de una manera menos
+                      tediosa y más divertida, por medio de la creación de un juego web esperamos cumplir este objetivo
+                      y
+                      poder
+                      ayudar a reducir la problemática.</p>
+                    <img src="./images/Sobre-nosotros/Sobre-nosotros.png" class="sn" alt="">
+                  </div>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card h-100 w-100 card22 c" style="width: 18rem;">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title">Misión</h5>
+                    <p class="card-text text-left">
+                      Desarrollar un juego web el cual tendrá como temática la enseñanza de la norma exceso de ruido, y
+                      así
+                      brindar un mejor entendimiento de esta.
+                    </p>
+                    <img src="./images/misión/objetivo.png" class="mi" alt="">
+                  </div>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card h-100 w-100 card3 c2" style="width: 18rem;">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title">Visión</h5>
+                    <p class="card-text text-left">
+                      Destacar en el mercado como una marca auténtica, educativa e innovadora.
+                    </p>
+                    <img src="./images/visión/mercadeo-en-linea.png" class="vi" alt="">
+                  </div>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+            <h3 class="creato fs-4 m-3">
+              Sobre Nosotros
+            </h3>
+            <div>
+              <p>Sigilo es una marca que busca concientizar a las personas de la ciudad de Medellín acerca del código de policía, por medio de un juego 2D creado por la empresa, en dicho juego se habla de un tema bastante importante que es el exceso de ruido. <br> <br>
+              Por medio de una encuesta hecha a cierta población de la ciudad de Medellín entre jóvenes y adultos pudimos darnos cuenta de que este problema afecta a toda el área de Medellín ya que durante todo el dia y la noche se hacen fiestas, tanto en barrios poco concurridos y barrios concurridos como el poblado, laureles, parque lleras, etc. <br>
+             </p>
+            </div>
+          </div>
+        </div>
+    </main>
+  </section>
+  <!-- seccion2 final -->
+
+  <!-- seccion3 inicio -->
+  <section id="nuestra creación" class="seccion3">
+    <div class="row">
+      <div class="col-12 col-lg-6 d-flex justify-content-center">
+        <img src="./images/Que_es_el_juego/ejemplo.jfif" class="pr" alt="">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="crr card h-100 w-100 card1" style="width: 18rem;">
+          <div class="card-body d-flex flex-column align-items-center justify-content-center">
+            <h5 class="card-title fs-3 creato ">¿Qué es el juego?</h5>
+            <p class="card-text text-left fs-4">Nuestra creación es un juego 2D lineal ubicado en la categoría de juegos educativos, desarrollado en base al incumplimiento de una de las normas del código de policía. <br>
+            Nuestro juego tendrá una gran interactividad con personajes y enemigos a lo largo de los niveles, con una interesante historia de fondo y de esta manera hacerlo más entretenido y generar interés en nuestros usuarios.</p>
+              <div class="botonp">
+                <button class="botonp letra fs-6 m-2 border-0">¡Dale play <br> y diviertete!</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- seccion3 final -->
+
+  <!-- seccion4 inicio -->
+  <section id="personajes" class="personajes">
+    <div class="titulo d-flex justify-content-center">
+      <h3 class="creato fs-1">Personajes</h3>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-4 d-flex justify-content-center">
+        <div class="card border-0 per" style="width: 18rem;">
+          <h5 class="titulos card-title">Gero</h5>
+          <a type="button" class="btn gero1" data-bs-toggle="modal" data-bs-target="#gero" class="gero1" href="#"><img
+              src="./images/personajes/gero-modal.png" class="gero" alt=""></a>
+              <p class="nombres">Jose Marin</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 d-flex justify-content-center">
+        <div class="card border-0 per" style="width: 18rem;">
+          <h5 class="titulos card-title">Drako</h5>
+          <a type="button" class="btn draco1" data-bs-toggle="modal" data-bs-target="#draco" href="#"
+            class="draco1"><img class="draco" src="./images/personajes/drako-modal.png" alt=""></a>
+            <p class="nombres1">Carlos Bernal</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 d-flex justify-content-center">
+        <div class="card border-0 per" style="width: 18rem;">
+          <h5 class="titulos card-title">Puar</h5>
+          <a type="button" class="btn puar1" data-bs-toggle="modal" data-bs-target="#puar" class="puar1" href="#"><img
+              src="./images/personajes/puar-modal.png" class="puar" alt=""></a>
+              <p class="nombres2">Julian Higuita</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="gero" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog borde">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-3 fw-bold" id="exampleModalLabel">Gero - Descripción</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <h3 class="gro">Personalidad</h3>
+              <p class="go">Gero es un hombre serio, discipinado, ambicioso y arriesgado.</p>
+              <h3 class="gro">Datos de interes</h3>
+              <li class="go">Edad: 21 años.</li>
+              <li class="go">Ojos: Color negro (el izquierdo es de color blanco por su herida).</li>
+              <li class="go">Altura: 1.60m.</li>
+              <li class="go">Complexión física: Mesomorfo.</li>
+              <li class="go">Enfermedades: Tuerto y problemas de ira.</li>
+            </div>
+            <div class="col-12 col-lg-6 gx-0">
+              <img src="./images/personajes/gero-modal.png " class="ger" alt="">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="botonp">
+              <button type="button" class="btn botonp" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="draco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog borde">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-3" id="exampleModalLabel">Drako - Descripción</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <h3 class="gro">Datos biográficos</h3>
+              <p class="go">Legendario dragón de la antigua china nacido a partir de la muerte de un viejo maestro de
+                artes marciales ancestrales.</p>
+              <h3 class="gro">Datos de interes</h3>
+              <li class="go">Longitud: 5m.</li>
+              <li class="go">Especie: Dragón guiverno.</li>
+              <li class="go">Pelaje: Azul (abundante).</li>
+              <li class="go">Masa corporal: 90Kg.</li>
+              <li class="go">Edad: Más de 1 milenio.</li>
+            </div>
+            <div class="col-12 col-lg-6 gx-0">
+              <img src="./images/personajes/drako-modal.png" class="dra" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="botonp">
+            <button type="button" class="btn botonp" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="puar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog borde">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-3" id="exampleModalLabel">Puar</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <h3 class="gro">Personalidad</h3>
+              <p class="go">Puar es un hombre valiente, seguro, honesto, empático y le gusta mucho proteger a lo demás.
+              </p>
+              <h3 class="gro">Datos de interes</h3>
+              <li class="go">Edad: 20 años.</li>
+              <li class="go">Ojos: Color azul.</li>
+              <li class="go">Altura: 1.55m.</li>
+              <li class="go">Complexión física: Mesomorfo.</li>
+              <li class="go">A la edad de 16 años puar se empeño en volverse el mejor espadachin (kendo), sueño el cual
+                ve como imposible por la muerte de su maestro.</li>
+            </div>
+            <div class="col-12 col-lg-6">
+              <img src="./images/personajes/puar-modal.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="botonp">
+            <button type="button" class="btn botonp" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- seccion4 final -->
+
+  <!-- footer inicio -->
+
+  <div class="footer d-flex flex-column justify-content-center align-items-center">
+    <div>
+      <a href="#header" class="logof">
+        <img src="./images/Logos/logo.png" class="logof" alt="SIGILO">
+      </a>
+    </div>
+    <p class="fs-6 fw-semibold">Términos y condiciones.</p>
+    <p class="fs-6 fw-semibold">Derechos reservados.</p>
+    <div>
+      <a href="https://es-la.facebook.com/" target="_blank"  class="logos nav-item">
+        <img src="./images/Footer/facebook.png" alt="Facebook" class="logos">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" class="logos">
+        <img src="./images/Footer/instagram.png" alt="Instagram" class="logos">
+      </a>
+      <a href="https://co.pinterest.com/" target="_blank" class="logos">
+        <img src="./images/Footer/pinterest.png" alt="Pinterest" class="logos">
+      </a>
+      <a href="https://www.tiktok.com/" target="blank" class="logos">
+        <img src="./images/Footer/tik-tok.png" alt="Tik-Tok" class="logos">
+      </a>
+      <a type="button" data-bs-toggle="modal" data-bs-target="#WhatsappEmpresarial" class="logos">
+        <img src="./images/Footer/whatsapp.png" alt="Whatsapp" class="logos">
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="WhatsappEmpresarial" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content borde">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Whatsapp empresarial</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fs-5 fw-bold">
+            555-555-55-55
+          </p>
+        </div>
+        <div class="modal-footer">
+          <div class="botonp">
+            <button type="button" class="btn botonp" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer final -->
+
+  <span class="ir-arriba icon-arrow-up2"><img src="./images/ir_arriba/flecha-hacia-arriba.png" class="flecha"
+      alt=""></span>
+
+  <script src="./js/jquery.js"></script>
+  <script src="./js/boton_arriba.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
