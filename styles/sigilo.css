@@ -132,7 +132,7 @@
 
 .gero{
     width: 250px ;
-    height: 370px;
+    height: 300px;
 }
 
 .gero1 :hover{
@@ -171,7 +171,7 @@
 
 .puar{
     border-radius: 2em;
-    height: 400px;
+    height: 300px;
 }
 
 .puar1 :hover{
@@ -333,12 +333,24 @@ h5{
 
 .clr{
     font-family: creatom;
-    font-size: 15pt !important;
+    font-size: 12pt !important;
     color: rgb(255, 255, 255) !important;
 }
 
+.clr :hover{
+    border-bottom: solid 3px #e5c505;
+    transition: 0.2s ease-in-out;
+}
+
+
 .clrx{
     color: black;
+}
+
+.correo{
+    width: 30px ;
+    height: 30px ;
+    margin: 0 1rem 0 0;
 }
 
 .hola{
