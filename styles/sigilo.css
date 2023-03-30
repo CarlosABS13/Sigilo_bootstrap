@@ -32,12 +32,12 @@
 .seccion11{
     margin: 1rem 1rem !important ;
     overflow: hidden;
-    background: #757575;
+    background: #757575c5;
     border-radius: 1em;
 }
 
 .crr{
-    background-color: #757575 !important;
+    background-color: #75757500 !important;
     border: none !important;
 }
 
@@ -106,7 +106,7 @@
 
 
 .seccion3{
-    background: #757575;
+    background: #757575c5;
     margin: 2rem 1rem;
     border-radius: 1rem;
     overflow: hidden;
@@ -237,7 +237,7 @@
 }
 
 .footer{
-    background-color: #757575;
+    background-color: #757575c5;
     z-index: 1000;
     border-top-left-radius: 1.8rem;
     border-top-right-radius: 1.8rem;
