@@ -32,7 +32,7 @@
 .seccion11{
     margin: 1rem 1rem !important ;
     overflow: hidden;
-    background: #757575c5;
+    background: #7575756f;
     border-radius: 1em;
 }
 
@@ -106,7 +106,7 @@
 
 
 .seccion3{
-    background: #757575c5;
+    background: #7575756f;
     margin: 2rem 1rem;
     border-radius: 1rem;
     overflow: hidden;
@@ -209,7 +209,7 @@
 }
 
 .dra{
-  width: 200px;  
+  width: 250px;  
 }
 
 .botonp{
@@ -237,7 +237,7 @@
 }
 
 .footer{
-    background-color: #757575c5;
+    background-color: #7575756f;
     z-index: 1000;
     border-top-left-radius: 1.8rem;
     border-top-right-radius: 1.8rem;
